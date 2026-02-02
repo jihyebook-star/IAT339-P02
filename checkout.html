@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>P01 - Product Listing Webpage</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="css/checkout.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="top-bar-inner">        
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="product-listing.html">Product Listing Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#citations">Citations</a>
+      </div>
+    </header>
+
+    <header>
+      <h1 class="header-title"> Checkout</h1>
+      <p class="header-paragraph">This page is for checking out the selected cake products.</p>
+  </header>
+    
+
+    <section class="element">
+        <h3>Main Navigation</h3>
+        <nav class="main-nav">
+        <a class="home-logo-img" href="index.html"><img src="Home.png" alt="Home logo"></a>
+        <a href="product-listing.html">Products</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+        <a class="cart-logo-img" href="checkout.html"><img src="Cart.png" alt="Cart logo"></a>
+      </nav>
+    </section>
+
+    <section class="element">
+        <h3>Cart</h3>
+
+        <div class="cart">
+          <article class="product-card">
+            <a class="product-listing-img strawberry" href="#" aria-label="Elegant Romantic Strawberry Cake"></a>
+            <h4 class="product-name">Romantic Strawberry Cake</h4>
+            <p class="product-price">Price: $40</p>
+            <p class="product-quantity">Quantity: 2</p>
+          </article>
+
+          <article class="product-card">
+            <a class="product-listing-img cherry-blossom" href="#" aria-label="Cute Cherry Blossom Girl Cake"></a>
+            <h4 class="product-name">Cherry Blossom Girl Cake</h4>
+            <p class="product-price">Price: $65</p>
+            <p class="product-quantity">Quantity: 1</p>
+          </article>
+        </div>
+
+    <div class="cart-summary">
+        <div class="summary-row">
+            <span>Subtotal :</span>
+            <span>$145.00</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Tax :</span>
+            <span>$8.25</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Quantity :</span>
+            <span>3</span>
+        </div>
+
+        <div class="summary-row total">
+            <span>Total :</span>
+            <span>$153.25</span>
+        </div>
+
+        <button class="button-nav">Proceed to Payment</button>
+        </div>
+    </section>
+
+    <section class="element">
+      <h2>Payment Form</h2>
+      <form>
+        <div class="form-field">
+          <h5>Payment Method
+          <input type="radio" id="credit" name="payment" value="credit">
+          <label for="credit">Credit Card</label>
+
+          <input type="radio" id="debit" name="payment" value="debit">
+          <label for="debit">Debit Card</label>
+          </h5>
+        </div>
+
+        <div class="form-field">
+          <h5>
+          <label for="card-name">Card holder name:</label>
+          <input class="text-input" type="text" id="card-name" name="card-name">
+          </h5>
+
+          <h5>
+          <label for="card-number">Card number:</label>
+          <input class="text-input" type="text" id="card-number" name="card-number">
+          </h5>
+
+          <h5>
+          <label for="card-expiration-date">Expiration date:</label>
+          <input class="text-input" type="text" id="card-expiration-date" name="card-expiration-date">
+          </h5>
+
+            <h5>
+            <label for="card-cvv">CVV number</label>
+            <input class="text-input" type="text" id="card-cvv" name="card-cvv">
+            </h5>
+
+            <h5>
+            <label for="card-address">Zip / Postal Code:</label>
+            <input class="text-input" type="text" id="card-address" name="card-address">
+            </h5>
+
+          </div>
+
+          <h5>
+          <button type="submit" class="button-nav">Submit Payment</button>
+          </h5>
+        </form>
+      </section>
+
+    <section id="citations">
+      <h3 class="additional-description">Citations</h3>
+      <ul>
+        <li>
+          Prince, Joe (and Laura Meseguer). 2011. <strong>Questrial [Font]</strong>. Retrieved from 
+          <a href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
+            https://fonts.googleapis.com/css2?family=Questrial&display=swap</a>
+        </li>
+
+        <li>
+          Google. (2013). <strong>Noto Sans [Font]</strong>. Retrieved from 
+          <a href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap">
+            https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap</a>
+        </li>
+
+        <li>
+          Wild Rose Cakes. (n.d.). <strong>Unicorn Theme Cake [Image]</strong>. Retrieved from 
+          <a href="https://wildrosecakes.com/products/unicorn-theme-cake?variant=45471647236391">
+            https://wildrosecakes.com/products/unicorn-theme-cake</a>
+        </li>
+
+        <li>
+          Pinterest. (n.d.). <strong>Unicorn Cake Image [Image]</strong>. Retrieved from 
+          <a href="https://www.pinterest.com/pin/39828777942450917/">
+            https://www.pinterest.com/pin/39828777942450917/</a>
+        </li>
+
+        <li>
+          Cake for Breakfast. (n.d.). <strong>Cake Design Image [Image]</strong>. Retrieved from 
+          <a href="https://www.cakeforbreakfast.ca/">https://www.cakeforbreakfast.ca/</a>
+        </li>
+
+        <li>
+          Mozilla Developer Network. (n.d.). <strong>Using CSS Transitions [Web Documentation]</strong>. 
+          Retrieved from 
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transitions/Using">
+            https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transitions/Using</a>
+        </li>
+
+        <li>
+          W3Schools. (n.d.). <strong>CSS Links [Web Tutorial]</strong>. Retrieved from 
+          <a href="https://www.w3schools.com/css/css_link.asp">https://www.w3schools.com/css/css_link.asp</a>
+        </li>
+
+        <li>
+          W3Schools. (n.d.). <strong>CSS Image Hover Effects [Web Tutorial]</strong>. Retrieved from 
+          <a href="https://www.w3schools.com/css/css3_images.asp">https://www.w3schools.com/css/css3_images.asp</a>
+        </li>
+
+        <li>
+          Mozilla Developer Network. (n.d.). <strong>justify-content [CSS Property]</strong>. 
+          Retrieved from 
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/justify-content">
+            https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/justify-content</a>
+        </li>
+
+        <li>
+          Mozilla Developer Network. (n.d.). <strong>flex-wrap [CSS Property]</strong>. 
+          Retrieved from 
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap">
+            https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap</a>
+        </li>
+      </ul>
+    </section>  
+
+  </body>
+</html>

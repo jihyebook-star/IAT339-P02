@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="top-bar-inner">     
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="product-listing.html">Product Listing Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#citations">Citations</a>
+      </div>
+    </header>
+
+    <header>
+      <h1 class="header-title">P01 - Style Guide Template</h1>
+      <p class="header-paragraph">A basic template for building my own style guides, to be utilized in the future.</p>
+  </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <h4>CSS selector:</h4>
+        <p>a</p>
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;This is a paragraph with an &lt;a class = "inTextLink" href="#"&gt;in-text link&lt;/a&gt; inside it.&lt;/p&gt;</code>
+        <h4>Rendered element:</h4>
+        <p>This is a paragraph with an <a class = "inTextLink" href="#">in-text  link</a> inside it.</p>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-submit, .button-reset</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-submit"&gt;Submit Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-reset"&gt;Reset Button&lt;/a&gt;</code>
+
+
+        <h4>Rendered element:</h4>
+        <a class="button-submit" href="#">Submit Button</a>
+        <a class="button-reset" href="#">Reset Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>input[type="text"], label</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;label for="name"&gt;Name:&lt;/label&gt;
+          &lt;input type="text" id="name" name="name"&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input class="text-input" type="text" id="name" name="name">
+        </div>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>input[type="radio"], label</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;input type="radio" id="pickup" name="delivery"&gt;
+          &lt;label for="pickup"&gt;Pick up in store&lt;/label&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="form-field">
+          <input type="radio" id="pickup" name="delivery">
+          <label for="pickup">Pick up in store</label>
+        </div>
+      </section>
+
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>CSS selector:</h4>
+        <p>a img</p>
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#"&gt;&lt;img src="UnicornThemeCake.jpg" alt="UnicornThemeCake.jpg"&gt;&lt;/a&gt;</code>
+        <h4>Rendered element:</h4>
+        <a class = "imageLink" href="#"><img src="UnicornThemeCake.jpg" alt="A unicorn cake with cute decorations" width="200px" height="200px"></a>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+      <h3>Headings</h3>
+      <h4>CSS selector:</h4>
+      <p>h1, h2, h3, h4, h5, p</p>
+      <h4>Sample code:</h4>
+      <code>
+        &lt;h1&gt;Heading Level 1&lt;/h1&gt;
+        &lt;h2&gt;Heading Level 2&lt;/h2&gt;
+        &lt;h3&gt;Heading Level 3&lt;/h3&gt;
+        &lt;h4&gt;Heading Level 4&lt;/h4&gt;
+        &lt;h5&gt;Heading Level 5&lt;/h5&gt;
+        &lt;p&gt;Paragraph&lt;/p&gt;
+      </code>
+      <h4>Rendered element:</h4>
+      <h1>Heading Level 1</h1>
+      <h2>Heading Level 2</h2>
+      <h3>Heading Level 3</h3>
+      <h4>Heading Level 4</h4>
+      <h5>Heading Level 5</h5>
+      <p>Paragraphs</p>
+      </section>
+
+      <section class="element">
+      <h3>Paragraphs</h3>
+      <h4>CSS selector:</h4>
+      <p>p</p>
+      <h4>Sample code:</h4>
+      <code>
+        &lt;p&gt; A basic template for building my own style guides, to be utilized in the future.
+        This is a paragraph for the paragraph element section!
+        &lt;/p&gt;
+      </code>
+      <h4>Rendered element:
+      </h4>
+      <p> A basic template for building my own style guides, to be utilized in the future.
+        This is a paragraph for the paragraph element section!
+      </p>
+      </section>
+
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>ol, li</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;ol&gt;
+            &lt;li&gt;Choose a cake type&lt;/li&gt;
+            &lt;li&gt;Select / Customize your design&lt;/li&gt;
+            &lt;li&gt;Review & checkout&lt;/li&gt;
+          &lt;/ol&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>Choose a cake type</li>
+          <li>Select / Customize your design</li>
+          <li>Review & checkout</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <nav class="main-nav">
+        <a class="home-logo-img" href="index.html"><img src="Home.png" alt="Home logo"></a>
+        <a href="product-listing.html">Products</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+        <a class="cart-logo-img" href="checkout.html"><img src="Cart.png" alt="Cart logo"></a>
+      </nav>
+      </section>
+
+      <section class="element">
+        <h3>Products Listing</h3>
+        <div class="products-container">
+          <article>
+            <a class = "product-listing-img" href="Cherry_Blossom_Girl_Cake.html">
+              <img src="Cherry_Blossom_Girl_Cake.png" alt="Pink Cherry Blossom Girl Reaching the Cake">
+            </a>
+            <h4 class="product-name">Cherry Blossom Girl Cake</h4>
+            <p class="product-price">$65</p>
+          <a class="button-nav product viewing" href="#">View Details</a>
+          </article>
+
+          <article>
+            <a class="product-listing-img" href="products.html">
+              <img src="Romantic_Strawberry_Cake.png" alt="Scrumptious Red White Strawberry Cake Cake">
+            </a>
+            <h4 class="product-name">Romantic Strawberry Cake</h4>
+            <p class="product-price">$50</p>
+            <a class="button-nav product viewing" href="#">View Details</a>
+         </article>
+
+          <article>
+            <a class="product-listing-img" href="products.html">
+              <img src="Unicorn_Themed_Cake.jpg" alt="A Cute Unicorn Themed Cake">
+            </a>
+            <h4 class="product-name">Unicorn Themed Cake</h4>
+            <p class="product-price">$70</p>
+            <a class="button-nav product viewing" href="#">View Details</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+        <form>
+          <div class="form-field">
+            <h5>Payment Method
+            <input type="radio" id="credit" name="payment" value="credit">
+            <label for="credit">Credit Card</label>
+
+            <input type="radio" id="debit" name="payment" value="debit">
+            <label for="debit">Debit Card</label>
+            </h5>
+          </div>
+
+          <div class="form-field">
+            <h5>
+            <label for="card-name">Card holder name:</label>
+            <input class="text-input" type="text" id="card-name" name="card-name">
+            </h5>
+
+            <h5>
+            <label for="card-number">Card number:</label>
+            <input class="text-input" type="text" id="card-number" name="card-number">
+            </h5>
+
+            <h5>
+            <label for="card-expiration-date">Expiration date:</label>
+            <input class="text-input" type="text" id="card-expiration-date" name="card-expiration-date">
+            </h5>
+
+            <h5>
+            <label for="card-cvv">CVV number</label>
+            <input class="text-input" type="text" id="card-cvv" name="card-cvv">
+            </h5>
+
+            <h5>
+            <label for="card-address">Zip / Postal Code:</label>
+            <input class="text-input" type="text" id="card-address" name="card-address">
+            </h5>
+
+          </div>
+
+          <h5>
+          <button type="submit" class="button-nav">Submit Payment</button>
+          </h5>
+        </form>
+      </section>
+
+<section class="element">
+  <h3>Checkout Cart</h3>
+
+  <div class="cart">
+    <article class="product-card">
+      <a class="product-image strawberry" href="#" aria-label="Elegant Romantic Strawberry Cake"></a>
+      <h4 class="product-name">Romantic Strawberry Cake</h4>
+      <p class="product-price">Price: $40</p>
+      <p class="product-quantity">Quantity: 2</p>
+    </article>
+
+    <article class="product-card">
+      <a class="product-image cherry-blossom" href="#" aria-label="Cute Cherry Blossom Girl Cake"></a>
+      <h4 class="product-name">Cherry Blossom Girl Cake</h4>
+      <p class="product-price">Price: $65</p>
+      <p class="product-quantity">Quantity: 1</p>
+    </article>
+  </div>
+
+  <div class="cart-summary">
+    <div class="summary-row">
+      <span>Subtotal</span>
+      <span>$145.00</span>
+    </div>
+
+    <div class="summary-row">
+      <span>Tax</span>
+      <span>$8.25</span>
+    </div>
+
+    <div class="summary-row">
+        <span>Quantity :</span>
+        <span>3</span>
+    </div>
+    
+    <div class="summary-row total">
+      <span>Total</span>
+      <span>$153.25</span>
+    </div>
+
+    <button class="button-nav">Proceed to Payment</button>
+
+  </div>
+</section>
+
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <!-- <section class="element"> -->
+
+    <section id="brand-description">
+      <h3 class="additional-description">Brand Description</h3>
+        <p class="additional-description">
+          Cake, Beyong Your Imagination is a handmade cake brand that makes custom cakes for special occasions.
+          Customers can commission cakes with personalized designs tailored to their needs, either by describing
+          their ideas with the help of an AI-assisted design preview or by selecting from the existing cake designs.
+
+          As a brand, the company is presented as thoughtful, creative, and detail-oriented, valuing each personal connection
+          and care in every order. The studio approaches each cake as a special part of the celebration rather than a
+          mass-produced product.
+
+          Customers are choose Jihye's Cake Crumb Studio because of its flexibility, personalization, and a more intimate
+          ordering experience. The ability to customize designs ensures that each cake feels unique and meaningful for the
+          occasion, making the studio a reliable choice.
+        </p>
+    </section>
+
+    <section>
+      <h3 class="additional-description">Colour palette</h3>
+      <img class="additional-description" src="ColourPalette.png" alt="Colour palette showcasing colours used for this website" width="450" height="150">
+    </section>
+
+    <section id="font-description">
+      <h3 class="additional-description">Fonts</h3>
+      <img class="additional-description" src="Font.png" alt="Font image to showcase which fonts are used in this webpage." width="300" height="110">
+    </section>   
+
+    <section id="art-direction">
+      <h3 class="additional-description">Art Direction</h3>
+        <p class="additional-description">
+          Cute, clean and simple for the custumization of cakes.
+        </p>
+    </section> 
+
+    <section>
+      <h3 class="additional-description">Potential Imagery</h3>
+        <img class="potential-imagery" src="Potential_imagery1.png" alt="Header part of the main page, planned" width="530" height="400">
+    </section>
+
+    <!-- <section id="citations">
+      <h2>Citations</h2>
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+      </ul>
+    </section>     -->
+
+
+    <section id="citations">
+      <h3 class="additional-description">Citations</h3>
+      <ul>
+        <li>
+          Prince, Joe (and Laura Meseguer). 2011. <strong>Questrial [Font]</strong>. Retrieved from 
+          <a href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
+            https://fonts.googleapis.com/css2?family=Questrial&display=swap</a>
+        </li>
+
+        <li>
+          Google. (2013). <strong>Noto Sans [Font]</strong>. Retrieved from 
+          <a href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap">
+            https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap</a>
+        </li>
+
+        <li>
+          Wild Rose Cakes. (n.d.). <strong>Unicorn Theme Cake [Image]</strong>. Retrieved from 
+          <a href="https://wildrosecakes.com/products/unicorn-theme-cake?variant=45471647236391">
+            https://wildrosecakes.com/products/unicorn-theme-cake</a>
+        </li>
+
+        <li>
+          Pinterest. (n.d.). <strong>Unicorn Cake Image [Image]</strong>. Retrieved from 
+          <a href="https://www.pinterest.com/pin/39828777942450917/">
+            https://www.pinterest.com/pin/39828777942450917/</a>
+        </li>
+
+        <li>
+          Cake for Breakfast. (n.d.). <strong>Cake Design Image [Image]</strong>. Retrieved from 
+          <a href="https://www.cakeforbreakfast.ca/">https://www.cakeforbreakfast.ca/</a>
+        </li>
+
+        <li>
+          Mozilla Developer Network. (n.d.). <strong>Using CSS Transitions [Web Documentation]</strong>. 
+          Retrieved from 
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transitions/Using">
+            https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transitions/Using</a>
+        </li>
+
+        <li>
+          W3Schools. (n.d.). <strong>CSS Links [Web Tutorial]</strong>. Retrieved from 
+          <a href="https://www.w3schools.com/css/css_link.asp">https://www.w3schools.com/css/css_link.asp</a>
+        </li>
+
+        <li>
+          W3Schools. (n.d.). <strong>CSS Image Hover Effects [Web Tutorial]</strong>. Retrieved from 
+          <a href="https://www.w3schools.com/css/css3_images.asp">https://www.w3schools.com/css/css3_images.asp</a>
+        </li>
+
+        <li>
+          Mozilla Developer Network. (n.d.). <strong>justify-content [CSS Property]</strong>. 
+          Retrieved from 
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/justify-content">
+            https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/justify-content</a>
+        </li>
+
+        <li>
+          Mozilla Developer Network. (n.d.). <strong>flex-wrap [CSS Property]</strong>. 
+          Retrieved from 
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap">
+            https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap</a>
+        </li>
+      </ul>
+    </section>
+
+  </body>
+</html>
