@@ -183,15 +183,11 @@ nav a:hover, nav a:focus {
   transform: scale(1.03);
 }
 
+
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
-
-/* 
-  TEXT ELEMENTS -------------------
-*/
-
-
 
 
 /* 
@@ -276,10 +272,6 @@ nav a:hover, nav a:focus {
   margin-bottom: 1rem;
 }
 
-
-
-
-
 .cart article {
   margin-bottom: 1rem;
   display: flex;
@@ -339,6 +331,23 @@ nav a:hover, nav a:focus {
   font-weight: 600;
 }
 
+.event-card {
+  border: 0.15rem solid #a77c78;
+  background-color: #f1cece4c;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.past-event {
+  opacity: 0.6;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #FAD867;
+}
+
 .button-nav {
   display: inline-block;
   padding: 0.5rem;
@@ -353,7 +362,7 @@ nav a:hover, nav a:focus {
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #fad867;
+  background-color: #FAD867;
 }
 
 .button-nav.product.viewing {
@@ -372,7 +381,7 @@ nav a:hover, nav a:focus {
 
 @media (max-width: 60rem) {
     .top-bar {
-        height: 2rem;
+        height: 0.8rem;
     }
 
     .top-bar-inner {
@@ -392,7 +401,7 @@ nav a:hover, nav a:focus {
 
 @media (max-width: 40rem) {
     .top-bar {
-        height: 1.5rem;
+        height: 0.6rem;
     }
 
     .top-bar-inner {

@@ -1,12 +1,12 @@
 body {
   font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
-  margin: 0;  
-  background-color: #805050;
+  margin: 0;
+  background-color: #869BA4;
   color: #FFE2B5;
 }
 
 .top-bar {
-  background-color: #FFE2B5;
+  background-color: #FFE4B9;
   height: 1rem;
   display: flex;
   align-items: center;
@@ -50,7 +50,7 @@ header{
 
 .header-text {
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
@@ -78,19 +78,18 @@ section {
 
 .element {
   padding: 2rem;
-  border: 0.15rem solid #a77c78;
+  border: 0.15rem solid rgb(167, 124, 120);
   background-color: #f1cece33;
   border-radius: 0.8rem;
 }
 
 h1 {
     font-size: 2rem;
-    margin-top: 2rem;
 }
 
 h2 {
   font-size: 1.7rem;
-  /* margin-top: 3rem; */
+  margin-top: 3rem;
   margin-left: 1rem;
 }
 
@@ -158,65 +157,6 @@ p {
   height: 1.9rem;
 }
 
-.cart article {
-  margin-bottom: 1rem;
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-
-  border: 0.08rem solid #ffffff81;
-  background-color: #85625f7d;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-.product-listing-img {
-  display: block;
-  width: 8rem;
-  height: 8rem;
-
-  flex-shrink: 0;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.product-listing-img.strawberry {
-  background-image: url("../Romantic_Strawberry_Cake.png");
-}
-
-.product-listing-img.cherry-blossom {
-  background-image: url("../Cherry_Blossom_Girl_Cake.png");
-}
-
-.cart-summary {
-  max-width: 26rem;
-  margin-left: auto;
-  padding: 1.5rem;
-
-  border: 0.08rem solid #ffffff81;
-  border-radius: 0.6rem;
-  background-color: #75605f;
-}
-
-.summary-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.75rem;
-
-  font-size: 0.9rem;
-}
-
-.summary-row.total {
-  margin-top: 1rem;
-  padding-top: 0.75rem;
-  border-top: 0.08rem solid #ddd;
-
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
 .button-nav {
   display: inline-block;
   padding: 0.5rem;
@@ -231,9 +171,71 @@ p {
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #fad867;
+  background-color: #FAD867;
 }
 
 .additional-description {
   margin-left: 1rem;
+}
+
+.event-card {
+  border: 0.15rem solid #a77c78;
+  background-color: #f1cece4c;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.past-event {
+  opacity: 0.6;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #FAD867;
+}
+
+
+@media (max-width: 60rem) {
+    .top-bar {
+        height: 2rem;
+    }
+
+    .top-bar-inner {
+        font-size: 0.7rem;
+    }
+
+    .header-title {
+        text-align: center;
+        font-size: 1.7rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .header-paragraph {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 40rem) {
+    .top-bar {
+        height: 1.5rem;
+    }
+
+    .top-bar-inner {
+        font-size: 0.5rem;
+    }
+
+    .header-title {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .header-paragraph {
+        text-align: center;
+        font-size: 0.5rem;
+        margin-bottom: 0.4rem;
+    }
 }
