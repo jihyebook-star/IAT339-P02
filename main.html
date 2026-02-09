@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>P01 - Style Guide Template</title>
+    <title>P02 - Main Webpage</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -15,11 +15,11 @@
   <body>
     <header class="top-bar">
       <div class="top-bar-inner">     
-        <a class="home-logo-img" href="index.html"><img src="Home.png" alt="Home logo"></a>
-        <a href="products.html">Products</a>
+        <a class="home-logo-img" href="main.html"><img src="Home.png" alt="Home logo"></a>
+        <a href="product-listing.html">Products</a>
         <a href="events.html">Events</a>
         <a href="contact.html">Contact</a>
-        <a class="cart-logo-img" href="cart.html"><img src="Cart.png" alt="Cart logo"></a>
+        <a class="cart-logo-img" href="checkout.html"><img src="Cart.png" alt="Cart logo"></a>
       </div>
     </header>
 
@@ -57,7 +57,7 @@
     </section>
     
     <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <!-- <section id="interactive_elements">
+    <section id="interactive_elements">
       <h2>Interactive Elements</h2>
 
       <section class="element">
@@ -224,7 +224,7 @@
         </ol>
       </section>
 
-    </section> -->
+    </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
 
@@ -323,51 +323,167 @@
         </form>
       </section>
 
-<section class="element">
-  <h3>Checkout Cart</h3>
+      <section class="element">
+        <h3>Checkout Cart</h3>
 
-  <div class="cart">
-    <article class="product-card">
-      <a class="product-image strawberry" href="#" aria-label="Elegant Romantic Strawberry Cake"></a>
-      <h4 class="product-name">Romantic Strawberry Cake</h4>
-      <p class="product-price">Price: $40</p>
-      <p class="product-quantity">Quantity: 2</p>
-    </article>
+        <div class="cart">
+          <article class="product-card">
+            <a class="product-image strawberry" href="#" aria-label="Elegant Romantic Strawberry Cake"></a>
+            <h4 class="product-name">Romantic Strawberry Cake</h4>
+            <p class="product-price">Price: $40</p>
+            <p class="product-quantity">Quantity: 2</p>
+          </article>
 
-    <article class="product-card">
-      <a class="product-image cherry-blossom" href="#" aria-label="Cute Cherry Blossom Girl Cake"></a>
-      <h4 class="product-name">Cherry Blossom Girl Cake</h4>
-      <p class="product-price">Price: $65</p>
-      <p class="product-quantity">Quantity: 1</p>
-    </article>
-  </div>
+          <article class="product-card">
+            <a class="product-image cherry-blossom" href="#" aria-label="Cute Cherry Blossom Girl Cake"></a>
+            <h4 class="product-name">Cherry Blossom Girl Cake</h4>
+            <p class="product-price">Price: $65</p>
+            <p class="product-quantity">Quantity: 1</p>
+          </article>
+        </div>
 
-  <div class="cart-summary">
-    <div class="summary-row">
-      <span>Subtotal</span>
-      <span>$145.00</span>
-    </div>
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span>$145.00</span>
+          </div>
 
-    <div class="summary-row">
-      <span>Tax</span>
-      <span>$8.25</span>
-    </div>
+          <div class="summary-row">
+            <span>Tax</span>
+            <span>$8.25</span>
+          </div>
 
-    <div class="summary-row">
-        <span>Quantity :</span>
-        <span>3</span>
-    </div>
+          <div class="summary-row">
+              <span>Quantity :</span>
+              <span>3</span>
+          </div>
     
-    <div class="summary-row total">
-      <span>Total</span>
-      <span>$153.25</span>
-    </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span>$153.25</span>
+          </div>
 
-    <button class="button-nav">Proceed to Payment</button>
+          <button class="button-nav">Proceed to Payment</button>
 
-  </div>
-</section>
+        </div>
+      </section>
 
+      <section class="element">
+        <h3>Customer Review & Feedback</h3>
+
+        <form class="feedback-form">
+
+          <div class="form-field">
+            <label for="feedback-name">Name: </label>
+            <input class="text-input" type="text" id="feedback-name" name="feedback-name">
+          </div>
+
+          <div class="form-field">
+            <label>Rating</label><br>
+            <input type="radio" id="star5" name="rating" value="1">
+            <label for="star5">1 ✰</label>
+
+            <input type="radio" id="star4" name="rating" value="2">
+            <label for="star4">2 ✰</label>
+
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">3 ✰</label>
+
+            <input type="radio" id="star2" name="rating" value="4">
+            <label for="star2">4 ✰</label>
+
+            <input type="radio" id="star1" name="rating" value="5">
+            <label for="star1">5 ✰</label>
+          </div>
+
+          <div class="form-field">
+            <label for="feedback-text">Your Feedback</label><br>
+            <textarea id="feedback-text" name="feedback-text" rows="8" cols="80"></textarea>
+          </div>
+
+          <button type="submit" class="button-nav">Submit Feedback</button>
+
+        </form>
+      </section>
+
+      <section class="element">
+        <h3>Contact Us</h3>
+
+          <div class="contact-container">
+
+          <div class="contact-info">
+            <h4>Direct Contact</h4>
+            <p>Email: contact@cakebeyondyourimagination.com</p>
+            <p>Phone: (604) 000-0001</p>
+            <p>Location: Coquitlam, British Columbia</p>
+            <p>Business Hours: Mon – Sat, 10AM – 4PM</p>
+          </div>
+
+          <div class="contact-form-area">
+            <h4>Send Us a Message</h4>
+
+            <form class="contact-form">
+
+              <div class="form-field">
+                <label for="contact-name">Name:</label>
+               <input class="text-input" type="text" id="contact-name">
+              </div>
+
+             <div class="form-field">
+                <label for="contact-email">Email:</label>
+                <input class="text-input" type="text" id="contact-email">
+              </div>
+
+             <div class="form-field">
+               <label for="contact-message">Message:</label><br>
+                <textarea id="contact-message" rows="4" cols="80"></textarea>
+             </div>
+
+             <button class="button-nav">Send Message</button>
+
+           </form>
+          </div>
+
+       </div>
+      </section>
+
+      <section class="element">
+        <h3>Events & Promotions</h3>
+
+          <h4>Current Promotions</h4>
+
+          <article class="event-card">
+            <h5>Valentine’s Day Special</h5>
+            <p>Date: Feb 11 – Feb 14</p>
+            <p>Enjoy special discounts on romantic cake designs.</p>
+            <p class="highlight">Sale ends in 3 days</p>
+          </article>
+
+          <article class="event-card">
+            <h5>Foundation Anniversary Birthday Offer</h5>
+            <p>Date: Jan 11</p>
+            <p>Birthday customers with the same day of our brand foundation receive a special celebration discount.</p>
+          </article>
+
+          <article class="event-card">
+            <h5>New Customer Welcome</h5>
+            <p>Get 5% off your first purchase.</p>
+          </article>
+
+
+          <h4>Upcoming Events</h4>
+          <article class="event-card">
+            <h5>Spring Limited Flower Cake Release</h5>
+            <p>Date: March 20</p>
+          </article>
+
+          <h4>Past Events</h4>
+          <article class="event-card past-event">
+            <h5>Christmas Holiday Cake Collection</h5>
+            <p>Ended: Dec 25</p>
+          </article>
+
+      </section>
 
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
@@ -420,6 +536,13 @@
     <section id="citations">
       <h3 class="additional-description">Citations</h3>
       <ul>
+        <li>
+          MDN Web Docs. (n.d.). <strong>&lt;textarea&gt;: The Textarea element</strong>. Retrieved from 
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea">
+            https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea
+          </a>
+        </li>
+
         <li>
           Prince, Joe (and Laura Meseguer). 2011. <strong>Questrial [Font]</strong>. Retrieved from 
           <a href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
