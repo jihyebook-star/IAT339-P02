@@ -1,7 +1,7 @@
 body {
   font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
   margin: 0;  
-  background-color: #805050;
+  background-color: #464F53;
   color: #FFE2B5;
 }
 
@@ -236,4 +236,61 @@ p {
 
 .additional-description {
   margin-left: 1rem;
+}
+
+
+@media (max-width: 60rem) {
+    .top-bar {
+        height: 0.8rem;
+    }
+
+    .top-bar-inner {
+        font-size: 0.7rem;
+    }
+
+    .home-logo-img img,
+    .cart-logo-img img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    .header-title {
+        text-align: center;
+        font-size: 1.7rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .header-paragraph {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 40rem) {
+    .top-bar {
+        height: 0.5rem;
+    }
+
+    .top-bar-inner {
+        font-size: 0.6rem;
+    }
+
+    .home-logo-img img,
+    .cart-logo-img img {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+
+    .header-title {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .header-paragraph {
+        text-align: center;
+        font-size: 0.5rem;
+        margin-bottom: 0.4rem;
+    }
 }

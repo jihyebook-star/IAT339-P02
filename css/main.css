@@ -388,6 +388,12 @@ nav a:hover, nav a:focus {
         font-size: 0.7rem;
     }
 
+    .home-logo-img img,
+    .cart-logo-img img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
     .header-title {
         font-size: 1.7rem;
         margin-left: 0.7rem;
@@ -401,10 +407,16 @@ nav a:hover, nav a:focus {
 
 @media (max-width: 40rem) {
     .top-bar {
-        height: 0.6rem;
+        height: 0.5rem;
     }
 
     .top-bar-inner {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .home-logo-img img,
+    .cart-logo-img img {
+      width: 1.3rem;
+      height: 1.3rem;
     }
 }
