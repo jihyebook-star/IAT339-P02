@@ -1,8 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #464F53;
   color: #FFE2B5;
+}
+
+.main-body{
+  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
 }
 
 .top-bar {
@@ -31,7 +40,13 @@ body {
   height: 1.9rem;
 }
 
-header{
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.page-header {
   padding: 3rem 0 0 0;
   position: relative;
   width: 100%;
@@ -57,17 +72,20 @@ header{
 }
 
 header h1 {
-  /* font-family: 'Rock Salt', cursive; */
-  font-family: 'Questrial', Arial, Helvetica, sans-serif;
-  color: #ffffff;
+  font-family: 'Sansita', sans-serif;
+  font-weight: 400;
+  color: #FFE4B9;
   max-width: 10rem;
   font-size: 3rem;
   line-height: 3.75rem;
 }
 
 header p{
+  font-family: 'Questrial', sans-serif;
   max-width: 29.5rem;
   line-height: 1.14rem;
+  color: white;
+  padding-top: 1rem;
 }
 
 section {
@@ -193,43 +211,6 @@ nav a:hover, nav a:focus {
 /* 
   COMBINED ELEMENTS -------------------
 */
-.main-nav {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  color: #433732;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: #433732;
-  transition: color 0.3s ease;
-}
-
-.main-nav a:hover {
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
-
-.main-nav a:focus {
-  text-decoration: none;
-  font-weight: 700;
-  transition: color 0.3s ease;
-}
-
-.main-nav a img {
-  transition: all 0.3s ease;
-  border-bottom: 3px solid transparent;
-}
-
-.main-nav a img:hover {
-  border-bottom:1px solid #433732;
-}
-
-.main-nav a img:active {
-  transform: scale(1.4);
-  border-bottom: none;
-}
 
 .products-container {
   display: flex;
