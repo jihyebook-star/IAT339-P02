@@ -1,7 +1,7 @@
 body {
   font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #A0766E;
+  background-color: #464F53;
   color: #FFE2B5;
 }
 
@@ -222,11 +222,17 @@ p {
 
 @media (max-width: 60rem) {
     .top-bar {
-        height: 2rem;
+        height: 0.8rem;
     }
 
     .top-bar-inner {
         font-size: 0.7rem;
+    }
+
+    .home-logo-img img,
+    .cart-logo-img img {
+      width: 1.5rem;
+      height: 1.5rem;
     }
 
     .header-title {
@@ -244,11 +250,17 @@ p {
 
 @media (max-width: 40rem) {
     .top-bar {
-        height: 1.5rem;
+        height: 0.5rem;
     }
 
     .top-bar-inner {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .home-logo-img img,
+    .cart-logo-img img {
+      width: 1.3rem;
+      height: 1.3rem;
     }
 
     .header-title {
