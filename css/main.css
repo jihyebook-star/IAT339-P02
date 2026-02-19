@@ -94,12 +94,6 @@ section {
   margin-right: 0.2rem;
 }
 
-.element {
-  padding: 2rem;
-  border: 0.15rem solid #a77c78;
-  background-color: #f1cece33;
-  border-radius: 0.8rem;
-}
 
 h1 {
   font-size: 2rem;
@@ -312,17 +306,6 @@ nav a:hover, nav a:focus {
   font-weight: 600;
 }
 
-.event-card {
-  border: 0.15rem solid #a77c78;
-  background-color: #f1cece4c;
-  padding: 2rem;
-  border-radius: 0.8rem;
-  margin-bottom: 1rem;
-}
-
-.past-event {
-  opacity: 0.6;
-}
 
 .highlight {
   font-weight: bold;
