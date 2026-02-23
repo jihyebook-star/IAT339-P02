@@ -1,0 +1,196 @@
+<!-- payment form after checkout cart -->
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>P02 - Brand Contact Webpage</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@400&display=swap" rel="stylesheet">
+
+    <!-- alegreya sans sc font for navbar-->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
+
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-top">
+        <div class="nav-spacer"></div>
+    
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/cakeryLogo.png" alt="le cakery logo">
+          </a>
+        </div>
+    
+        <div class="nav-icons">
+          <a href="account.html">
+            <img src="img/navAccount.png" alt="Account icon">
+          </a>
+          <a href="index.html">
+            <img src="img/navHome.png" alt="Home icon">
+          </a>
+          <a href="checkout.html">
+            <img src="img/navCart.png" alt="Cart icon">
+          </a>
+        </div>
+      </div>
+    
+      <nav class="nav-links">
+        <a href="product-listing.html">Products</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="art.html">Art & News</a>
+      </nav>
+    </header>
+
+    <!-- checkout -->
+    <section class="checkout-wrap">
+        <div class="checkout-container">
+      
+          <h1>Order details</h1>
+          <a href="checkout.html" class="back-btn">BACK TO CART</a>
+      
+          <div class="checkout-grid">
+      
+            <!-- LEFT COLUMN -->
+            <div class="checkout-left">
+      
+              <!-- PERSONAL INFO -->
+              <div class="info-box">
+                <h2>Personal info</h2>
+      
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>Surname</label>
+                    <input type="text">
+                  </div>
+                </div>
+      
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Phone number</label>
+                    <input type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="text">
+                  </div>
+                </div>
+      
+                <h2>Address</h2>
+      
+                <div class="form-row">
+                  <div class="form-group wide">
+                    <label>Street name</label>
+                    <input type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>Postal code</label>
+                    <input type="text">
+                  </div>
+                </div>
+      
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Street number</label>
+                    <input type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>Apt number (OPTIONAL)</label>
+                    <input type="text">
+                  </div>
+                </div>
+      
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>City</label>
+                    <input type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>Province</label>
+                    <input type="text">
+                  </div>
+                </div>
+      
+              </div>
+      
+              <!-- DELIVERY + PAYMENT -->
+              <div class="payment-box">
+                <h2>Delivery</h2>
+      
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Date</label>
+                    <select><option>Select</option></select>
+                  </div>
+                  <div class="form-group">
+                    <label>Time</label>
+                    <select><option>Select</option></select>
+                  </div>
+                </div>
+      
+                <h2>Payment</h2>
+      
+                <div class="form-group wide">
+                  <label>Card number</label>
+                  <input type="text">
+                </div>
+      
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>EXP</label>
+                    <input type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>CVV</label>
+                    <input type="text">
+                  </div>
+                </div>
+      
+                <div class="form-group wide">
+                  <label>Card name</label>
+                  <input type="text">
+                </div>
+      
+                 <!-- Link to next page -->
+                <a href="orderconfirm.html" class="pay-btn">
+                PAY</a>
+              </div>
+      
+            </div>
+      
+            <!-- RIGHT COLUMN (SUMMARY) -->
+            <div class="checkout-summary">
+              <!-- reuse cart-item structure here -->
+              <div class="summary-totals">
+                <div class="line"><span>Subtotal:</span><span>$40</span></div>
+                <div class="line"><span>Tax:</span><span>$4</span></div>
+                <div class="line"><span>Delivery:</span><span>free</span></div>
+                <div class="line total"><span>Total:</span><span>$44</span></div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+    
+
+
+    
+
+  </body>
+</html>
