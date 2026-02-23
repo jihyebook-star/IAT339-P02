@@ -1,98 +1,143 @@
-/* CONTACT SECTION */
-.contact-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 80px 8%;
-  gap: 60px;
+.contact-wrap{
+  background: #464F53;
+  color: #F5D7B2;
+  padding: 4.5rem 0 5rem;
 }
 
-/* LEFT SIDE */
-.contact-left h1 {
+.contact-header,
+.contact-grid{
+  max-width: 72rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+.contact-header h1{
   font-family: 'Sansita', serif;
-  margin-bottom: 40px;
   font-weight: 400;
-  color: #FFE4B9;
-  max-width: 10rem;
+  color: #F5D7B2;
   font-size: 3rem;
-  line-height: 3.75rem;
+  margin: 0 0 1rem;
+  white-space: nowrap;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+.contact-line{
+  height: 1px;
+  background: #F5D7B2;
+  width: 100%;
+  opacity: 0.95;
+  margin-bottom: 3rem;
 }
 
-label {
-  margin-bottom: 8px;
-  font-size: 14px;
-  text-transform: uppercase;
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
 }
 
-input,
-textarea {
+/* LEFT CONTACT MESSAGE FORM */
+/* TUTORIAL FROM https://www.w3schools.com/css/css_grid.asp */
+.contact-form{
+  display: grid;
+  gap: 1.25rem;
+  max-width: 34rem;
+}
+
+.contact-form label{
+  font-family: 'noto-sans', sans-serif;
+  font-size: 0.875rem;
+  color: white;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
   background: transparent;
-  border: 1px solid #e8d2a8;
-  padding: 12px;
-  margin-bottom: 25px;
-  color: #e8d2a8;
-  font-size: 14px;
+  border: 1px solid;
+  border-color: #F5D7B2;
+  padding: 0.85rem 0.9rem;
+  color: #F5D7B2;
+  font-size: 1rem;
+  outline: none;
 }
 
-textarea {
+.contact-form textarea{
   resize: none;
+  min-height: 9rem;
 }
 
-button {
-  width: 150px;
-  padding: 12px;
-  background: #e8d2a8;
+.contact-form button{
+  justify-self: start;
+  width: 10.5rem;
+  padding: 0.85rem 1.6rem;
+  background: #F5D7B2;
+  color: #464F53;
   border: none;
-  color: #4e5a5c;
-  font-weight: 500;
-  border-radius: 20px;
+  border-radius: 999px;
   cursor: pointer;
-  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
-button:hover {
-  background: #d8bf90;
+.contact-form button:hover{
+  opacity: 0.85;
+}
+/* RIGHT INFO BOX */
+.info-box{
+  border: 1px solid;
+  border-color: #F5D7B2;
+  padding: 2.5rem;
+  max-width: 26rem;
+  width: 100%;
+  margin-left: auto; 
 }
 
-/* RIGHT SIDE */
-.contact-right {
+.info-box p{
+  font-family: 'noto-sans', sans-serif;
+  color: white;
+  margin: 0 0 2rem;
+  line-height: 1.7;
+}
+
+.social h4{
+  font-family: 'noto-sans', sans-serif;
+  color: white;
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+}
+
+.handle{
   display: flex;
   align-items: center;
+  gap: 0.75rem;
+  margin: 0;
 }
 
-.info-box {
-  border: 1px solid #e8d2a8;
-  padding: 40px;
-  min-width: 300px;
+.ig-icon{
+  width: 1.4rem;   
+  height: auto;
+  display: block;
 }
 
-.info-box p {
-  margin-bottom: 30px;
-  line-height: 1.6;
-}
-
-.social h4 {
-  text-transform: uppercase;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .contact-section {
-    flex-direction: column;
+/* MAKING IT RESPONSIVE */
+@media (max-width: 56.25rem){ 
+  .contact-grid{
+    grid-template-columns: 1fr;
   }
-
-  .contact-left h2 {
-    font-size: 36px;
+  .info-box{
+    margin-left: 0;
   }
+}
 
-  .info-box {
-    width: 100%;
+@media (max-width: 37.5rem){ 
+  .contact-header,
+  .contact-grid{
+    padding: 0 6%;
   }
-
+  .contact-form button{
+    width: 9.5rem;
+  }
 }
