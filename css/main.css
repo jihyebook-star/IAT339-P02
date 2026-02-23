@@ -66,10 +66,10 @@ header {
 
 .header-text {
   position: absolute;
-  top: 48.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
+  top: 50%;
+  left: 8%;           
+  transform: translateY(-50%);
+  width: 30rem;
 }
 
 header h1 {
@@ -136,60 +136,215 @@ li {
   line-height: 1.3rem;
 }
 
-.button-shopnow {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
+/* tutorial: https://www.w3schools.com/howto/howto_css_button_on_image.asp */
 
-  width: 12rem;
-  height: 6rem;
-
-  margin: 0 auto;
-
-  /* padding: 0.75rem 4.5rem; */
-  text-decoration: none;
-  background-color: #FFE4B9;
-  color: #464F53;
-  border-radius: 0.6rem;
-}
-
-.chef-container {
-  display: flex;
-  justify-content: center;
-  gap: 6rem;
-  margin-top: 4rem;
-}
-
-.chef-card {
-  text-align: center;
-  max-width: 300px;
-}
-
-.chef-image {
-  width: 220px;
-  height: 220px;
-  margin: 0 auto 1.5rem auto;
-  border-radius: 50%;
+.page-header{
+  position: relative;
+  height: 35rem;
   overflow: hidden;
-  border: 6px solid #ffffff;
 }
 
-.chef-image img {
+/* make the image a background layer */
+.page-header-img{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.45;
+  z-index: 0;
 }
 
-.chef-name {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 1.56rem;
-  font-weight: 800;
+/* make text sit above the image */
+.header-text{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  width: 30rem;
+  z-index: 2;
+}
+
+/* make the button sit above everything */
+.button-shopnow{
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;              
+  transform: translateX(-50%);
+  z-index: 3;
+
+  display: inline-block;
+  background: #FFE4B9;
+  color: #464F53;
+  padding: 0.9rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: 'Questrial', sans-serif;
+}
+.button-shopnow:hover{
+  opacity: 0.85;
+}
+
+.section-title{
   margin-bottom: 2.5rem;
 }
 
+.section-title h2{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: none;
+  margin: 0 0 0.75rem;
+  color: #FFE4B9;
+}
 
+.section-line{
+  height: 1px;
+  background: #F5D7B2;
+  width: 16rem;
+  opacity: 0.9;
+}
 
+/* CHEFS */
+.chefs-wrap{
+  background: #464F53;
+  padding: 2rem 0 5rem;
+  color: #FFE4B9;
+}
 
+.chefs-container{
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+.chef-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.chef-card{
+  text-align: center;
+}
+
+.chef-img{
+  width: 9.5rem;
+  height: 9.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f7f0ee;
+  display: block;
+  margin: 0 auto 1.25rem;
+}
+
+.chef-card h3{
+  margin: 0 0 1rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+}
+
+.chef-card ul{
+  margin: 0 auto;
+  padding-left: 1.1rem;
+  max-width: 22rem;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* INGREDIENTS */
+.ingredients-wrap{
+  background: #464F53;
+  padding: 4rem 0 6rem;
+}
+
+.ingredients-container{
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* collage layout */
+.ingredients-collage{
+  position: relative;
+  min-height: 22rem;
+}
+
+.collage-img{
+  position: absolute;
+  border-radius: 0.25rem;
+  border: 6px solid #f7f0ee;
+  object-fit: cover;
+  display: block;
+}
+
+/* tweak these to match your screenshot */
+.collage-img.big{
+  width: 18rem;
+  height: 11rem;
+  left: 0;
+  top: 0;
+}
+
+.collage-img.mid{
+  width: 14rem;
+  height: 9rem;
+  left: 6rem;
+  top: 7rem;
+}
+
+.collage-img.wide{
+  width: 20rem;
+  height: 8rem;
+  left: 1.5rem;
+  top: 15rem;
+}
+
+/* right white box */
+.ingredients-box{
+  background: #f7f0ee;
+  padding: 3rem 2.5rem;
+  color: #2c2c2c;
+}
+
+.ingredients-box h2{
+  font-family: 'Sansita', serif;
+  color: black;
+  font-weight: 400;
+  margin: 0 0 1.25rem;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+.ingredients-box p{
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .chef-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .ingredients-container{
+    grid-template-columns: 1fr;
+  }
+
+  .ingredients-collage{
+    min-height: 26rem;
+  }
+}
 
 
 
