@@ -32,7 +32,7 @@
 .contact-grid{
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: clamp(2rem, 5vw, 5rem);
+  gap: 5rem;
   align-items: start;
 }
 
@@ -130,6 +130,9 @@
   .info-box{
     margin-left: 0;
   }
+  .products-grid{
+    gap: 3rem;
+  }
 }
 
 @media (max-width: 37.5rem){ 
@@ -139,5 +142,8 @@
   }
   .contact-form button{
     width: 9.5rem;
+  }
+  .products-grid{
+    gap: 2rem;
   }
 }
