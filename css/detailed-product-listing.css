@@ -69,9 +69,9 @@
     right: 30px;
     padding: 14px 32px;
     border: none;
-    background-color: #FFE4B9;
+    font-family: 'Questrial', sans-serif;
+    background: #FFE4B9;
     color: #464F53;
-    font-weight: 600;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -157,9 +157,9 @@
 .submit-review {
     padding: 12px 28px;
     border: none;
-    background-color: #FFE4B9;
+    font-family: 'Questrial', sans-serif;
+    background: #FFE4B9;
     color: #464F53;
-    font-weight: 600;
     border-radius: 25px;
     cursor: pointer;
 }
