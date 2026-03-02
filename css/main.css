@@ -11,6 +11,50 @@ body {
   color: #ffffff;
 }
 
+/* footer */
+.site-footer{
+  background: #5D3636;    
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.footer-container{
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer p{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #F5D7B2;
+  opacity: 0.8;
+}
+
+.footer-left p{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.footer-right{
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-right a{
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: #F5D7B2;
+  transition: opacity 0.2s ease;
+}
+
+.footer-right a:hover{
+  opacity: 0.6;
+}
+
 .main-body{
   font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
 }
@@ -346,70 +390,10 @@ li {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .additional-description {
   margin-left: 1rem;
 }
+
 
 code {
   color: #433732;
@@ -503,6 +487,60 @@ nav a:hover, nav a:focus {
   margin-left: 1rem;
 }
 
+/* citations */
+.citations-wrap{
+  padding: 4.5rem 0 5rem;
+}
+
+.citations-header{
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+.citations-header h1{
+  font-family: 'Sansita', serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+
+.citations-line{
+  height: 1px;
+  background: #FFE4B9;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.citations-container{
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+.citations-box{
+  border: 1px solid #FFE4B9;
+  padding: 2.5rem;
+  max-width: 42rem;
+}
+
+.citations-box p{
+  font-family:'Noto Sans', sans-serif;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.citations-box a{
+  color: #FFE4B9;
+  text-decoration: underline;
+}
+
+.citations-box a:hover{
+  opacity: 0.8;
+}
+
 @media (max-width: 60rem) {
     .top-bar {
         height: 0.8rem;
@@ -527,6 +565,10 @@ nav a:hover, nav a:focus {
         font-size: 0.8rem;
         margin-left: 0.7rem;
     }
+
+    .citations-box{
+      max-width: 100%;
+    }
 }
 
 @media (max-width: 40rem) {
@@ -544,3 +586,7 @@ nav a:hover, nav a:focus {
       height: 1.3rem;
     }
 }
+
+
+
+
