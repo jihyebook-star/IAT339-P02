@@ -113,8 +113,33 @@
 .box {
     width: 160px;
     height: 150px;
-    background-color: #ffffff;
     margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.nuts {
+    background-image: url("../img/nuts.jpg");
+}
+
+.dairy {
+    background-image: url("../img/milk.jpg");
+}
+
+.gluten {
+    background-image: url("../img/gluten.jpg");
+}
+
+.eggs {
+    background-image: url("../img/eggs.jpg");
+}
+
+.bananas {
+    background-image: url("../img/bananas.jpg");
+}
+
+.strawberries {
+    background-image: url("../img/strawberries.jpg");
 }
 
 .allergy-item h4 {

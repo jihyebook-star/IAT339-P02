@@ -125,7 +125,6 @@
 }
 
 
-/* responsiveness */
 @media (max-width: 48rem) {
     .nav-top {
         display: flex;

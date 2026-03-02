@@ -14,7 +14,7 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
-    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/styleguide.css" rel="stylesheet">
 
   </head>
   <body>
@@ -45,65 +45,181 @@
         <a href="product-listing.html">Products</a>
         <a href="events.html">Events</a>
         <a href="contact.html">Contact</a>
-        <a href="art.html">Style guide</a>
+        <a href="art.html">Art & News</a>
+        <a href="styleguide.html">Style Guide</a>
       </nav>
     </header>
 
-  <header class="contact-header"></header>
+    <section id="interactive_elements" class="page-container">
+      <h1>Interactive Elements</h1>
 
-  <div class="events-group">
-    <div class="events-label">
-      <div class="line"></div>
-    </div>
+      <section class="element">
+        <h3>In-text link</h3>
+        <h4>CSS selector:</h4>
+        <p>a</p>
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;This is a paragraph with an &lt;a class = "inTextLink" href="#"&gt;in-text link&lt;/a&gt; inside it.&lt;/p&gt;</code>
+        <h4>Rendered element:</h4>
+        <p>This is a paragraph with an <a class = "inTextLink" href="#">in-text  link</a> inside it.</p>
+      </section>
+
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+      </section>
 
 
-  <section class="contact-section">
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
 
-    <section class="contact-wrap">
-      <header class="contact-header">
-        <h1>Contact us</h1>
-        <div class="contact-line"></div>
-      </header>
-    
-      <div class="contact-grid">
-        <!-- LEFT -->
-        <form class="contact-form">
-          <label for="name">FULL NAME</label>
-          <input id="name" type="text" />
-    
-          <label for="email">EMAIL</label>
-          <input id="email" type="email" />
-    
-          <label for="subject">SUBJECT</label>
-          <input id="subject" type="text" />
-    
-          <label for="message">MESSAGE</label>
-          <textarea id="message" rows="6"></textarea>
-    
-          <button type="submit">SEND</button>
-        </form>
-    
-        <!-- RIGHT -->
-        <aside class="info-box">
-          <p>
-            4320 CANDYLAND LANE<br />
-            BURNABY, BC<br />
-            V2K9X9
-          </p>
-    
-          <p>604-402-5930</p>
-    
-          <div class="social">
-            <h4>FOLLOW US</h4>
-            <p class="handle">
-              <img src="../img/instagramLogo.png" alt="Instagram logo" class="ig-icon">
-              LECAKERY
-            </p>
-          </div>
-        </aside>
-      </div>
+        <h4>CSS selector:</h4>
+        <p>.button-submit, .button-reset</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-submit"&gt;Submit Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-reset"&gt;Reset Button&lt;/a&gt;</code>
+
+
+        <h4>Rendered element:</h4>
+        <a class="button-submit" href="#">Submit Button</a>
+        <a class="button-reset" href="#">Reset Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>input[type="text"], label</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;label for="name"&gt;Name:&lt;/label&gt;
+          &lt;input type="text" id="name" name="name"&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input class="text-input" type="text" id="name" name="name">
+        </div>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>input[type="radio"], label</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;input type="radio" id="pickup" name="delivery"&gt;
+          &lt;label for="pickup"&gt;Pick up in store&lt;/label&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="form-field">
+          <input type="radio" id="pickup" name="delivery">
+          <label for="pickup">Pick up in store</label>
+        </div>
+      </section>
+
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>CSS selector:</h4>
+        <p>a img</p>
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#"&gt;&lt;img src="ChocoMonsterFudge.png" alt="0pg"&gt;&lt;/a&gt;</code>
+        <h4>Rendered element:</h4>
+        <a class = "imageLink" href="#"><img src="img/ChocoMonsterFudge.png" alt="A fudge cake with decorations"></a>
+
+      </section>
+
+
     </section>
-    
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-  </body>
-</html>
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements" class="page-container">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+      <h3>Headings</h3>
+      <h4>CSS selector:</h4>
+      <p>h1, h2, h3, h4, h5, p</p>
+      <h4>Sample code:</h4>
+      <code>
+        &lt;h1&gt;Heading Level 1&lt;/h1&gt;
+        &lt;h2&gt;Heading Level 2&lt;/h2&gt;
+        &lt;h3&gt;Heading Level 3&lt;/h3&gt;
+        &lt;h4&gt;Heading Level 4&lt;/h4&gt;
+        &lt;h5&gt;Heading Level 5&lt;/h5&gt;
+        &lt;p&gt;Paragraph&lt;/p&gt;
+      </code>
+      <h4>Rendered element:</h4>
+      <h2>Heading Level 1</h2>
+      <h2>Heading Level 2</h2>
+      <h3>Heading Level 3</h3>
+      <h4>Heading Level 4</h4>
+      <h5>Heading Level 5</h5>
+      <p>Paragraphs</p>
+      </section>
+
+      <section class="element">
+      <h3>Paragraphs</h3>
+      <h4>CSS selector:</h4>
+      <p>p</p>
+      <h4>Sample code:</h4>
+      <code>
+        &lt;p&gt; A basic template for building my own style guides, to be utilized in the future.
+        This is a paragraph for the paragraph element section!
+        &lt;/p&gt;
+      </code>
+      <h4>Rendered element:
+      </h4>
+      <p> A basic template for building my own style guides, to be utilized in the future.
+        This is a paragraph for the paragraph element section!
+      </p>
+      </section>
+
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>ol, li</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;ol&gt;
+            &lt;li&gt;Choose a cake type&lt;/li&gt;
+            &lt;li&gt;Select / Customize your design&lt;/li&gt;
+            &lt;li&gt;Review & checkout&lt;/li&gt;
+          &lt;/ol&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>Choose a cake type</li>
+          <li>Select / Customize your design</li>
+          <li>Review & checkout</li>
+        </ol>
+      </section>
+
+    </section>

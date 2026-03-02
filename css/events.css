@@ -61,7 +61,6 @@
   line-height: 1.4;
 }
 
-/* subtle hover */
 .event-card:hover {
   background-color: rgba(245, 215, 178, 0.1);
   transform: translateY(-4px);

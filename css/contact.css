@@ -122,7 +122,6 @@
   display: block;
 }
 
-/* MAKING IT RESPONSIVE */
 @media (max-width: 56.25rem){ 
   .contact-grid{
     grid-template-columns: 1fr;
