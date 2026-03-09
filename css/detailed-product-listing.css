@@ -16,17 +16,20 @@
 
 .image-wrapper {
     background: #ffffff;
-    padding: 18px;
-    width: 520px;
+    padding: 1.125rem;
+    flex: 1 1 32.5rem;
+    border-radius: 0.5rem;
 }
+
 
 .image-wrapper img {
     width: 100%;
     display: block;
+    border-radius: 0.4rem;
 }
 
 .product-info {
-    max-width: 520px;
+    flex: 1 1 32.5rem;
 }
 
 .product-info h1 {
@@ -36,8 +39,8 @@
 }
 
 .title-line {
-    width: 32rem;
-    height: 1px;
+    width: 100%;
+    max-width: 32rem;
     background-color: #ffffff;
     margin-bottom: 25px;
 }
@@ -191,4 +194,98 @@
 
 .submit-review:hover {
     opacity: 0.9;
+}
+
+
+@media (max-width: 64rem) {
+
+.product-section,
+.allergy-section,
+.review-section {
+    padding: 3.75rem 3.75rem;
+}
+
+.product-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.image-wrapper {
+    width: 100%;
+    max-width: 30rem;
+}
+
+.product-info {
+    max-width: 37.5rem;
+    width: 100%;
+}
+
+.title-line {
+    width: 100%;
+}
+
+.allergy-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.allergy-item {
+    width: 45%;
+}
+
+.box {
+    width: 100%;
+}
+
+}
+
+@media (max-width: 37.5rem) {
+
+.product-section,
+.allergy-section,
+.review-section {
+    padding: 2.5rem 1.25rem;
+}
+
+.product-info h1 {
+    font-size: 1.6rem;
+}
+
+.description {
+    font-size: 0.95rem;
+}
+
+.purchase-box {
+    padding: 1.5rem;
+}
+
+.add-btn {
+    position: static;
+    margin-top: 1.25rem;
+}
+
+.allergy-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.allergy-item {
+    width: 100%;
+    max-width: 18.75rem;
+}
+
+.section-line {
+    width: 100%;
+}
+
+.review-container {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
 }

@@ -1,3 +1,46 @@
+.page-header{
+  position: relative;
+  width: 100%;
+  height: 35rem;
+  overflow: hidden;
+}
+
+.page-header-img{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+  z-index: 0;
+}
+
+.header-text{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  width: 30rem;
+  z-index: 2;
+}
+
+.header-text h1{
+  font-family: 'Sansita', sans-serif;
+  font-weight: 400;
+  color: #FFE4B9;
+  max-width: 10rem;
+  font-size: 3rem;
+  line-height: 3.75rem;
+}
+
+.header-text p{
+  font-family: 'Questrial', sans-serif;
+  max-width: 29.5rem;
+  line-height: 1.14rem;
+  color: white;
+  padding-top: 1rem;
+}
+
 .events-section {
   background-color: #464F53; 
   padding: 4rem 8%;
