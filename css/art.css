@@ -1,5 +1,7 @@
 .gallery-section {
-  padding: 4rem 8%;
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
 }
 
 .gallery-section h2 {
@@ -11,6 +13,8 @@
   grid-template-columns: repeat(3, 1fr);
   /* I learned how to use grid-template-columns from: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns */
   gap: 1.5rem;
+  position:relative;
+  z-index: 1;
 }
 
 .gallery-grid img {
@@ -19,6 +23,36 @@
   object-fit: cover;
   display: block;
   border-radius: 6px;
+}
+
+.bg-block{
+  position:absolute;
+  opacity:0.95;
+  z-index:0;
+}
+
+.bg-left{
+  width:22rem;
+  height: 8rem;
+  left:-2rem;
+  top:22rem;
+  background: #A77C78;
+}
+
+.bg-right{
+  width:22rem;
+  height: 10rem;
+  right:-2rem;
+  top:12rem;
+  background: #5D3636;
+}
+
+.bg-bottom{
+  width:20rem;
+  height: 15rem;
+  right:-2rem;
+  top:40rem;
+  background: #FFE4B9;
 }
 
 @media (max-width: 900px) {

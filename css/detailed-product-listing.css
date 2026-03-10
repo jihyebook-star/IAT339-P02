@@ -59,6 +59,7 @@
     position: relative;
     width: 100%;
     min-height: 150px;
+    border-radius: 0.5rem;
 }
 
 .price {
@@ -77,10 +78,34 @@
     color: #464F53;
     border-radius: 25px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .add-btn:hover {
-    opacity: 0.9;
+    opacity: 0.7;
+}
+
+.quantity-section{
+    margin-top: 20px;
+}
+
+.quantity-section label {
+    display: block;
+    color: #464F53;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.quantity-section input {
+    width: 90px;
+    padding: 10px 12px;
+    border: 1px solid #464F53;
+    border-radius: 20px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem;
+    color: #464F53;
+    background: transparent;
 }
 
 .allergy-section {

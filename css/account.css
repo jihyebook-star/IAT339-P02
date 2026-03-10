@@ -6,9 +6,11 @@
 
 .account-title {
   font-family: 'Sansita', serif;
-  font-size: 4.3rem;
   font-weight: 400;
-  margin-bottom: 60px;
+  color: #F5D7B2;
+  font-size: 3rem;
+  margin: 0 0 1rem;
+  white-space: nowrap;
 }
 
 .account-container {
@@ -59,6 +61,19 @@
   font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
 }
+
+.account-box input:hover,
+.account-box textarea:hover{
+  border-color: #FFE4B9;
+  background-color: rgba(255, 228, 185, 0.08);
+}
+
+.account-box input:focus,
+.account-box textarea:focus{
+  border-color: #FFE4B9;
+  background-color: rgba(255, 228, 185, 0.12);
+}
+
 
 .remember-row {
   display: flex;

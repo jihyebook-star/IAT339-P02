@@ -14,7 +14,13 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
     <link href="css/styleguide.css" rel="stylesheet">
+    <link href="css/account.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
+    <link href="css/art.css" rel="stylesheet">
+    <link href="css/product-listing.css" rel="stylesheet">
+    <link href="css/events.css" rel="stylesheet">
 
   </head>
   <body>
@@ -49,8 +55,16 @@
       </nav>
     </header>
 
+    <section class ="styleguide-section">
+
+      <div class="contact-wrap">
+        <header class = "contact-header">
+          <h1>Style Guide</h1>
+          <div class = "contact-line"></div>
+        </header>
+
     <section id="interactive_elements" class="page-container">
-      <h1>Interactive Elements</h1>
+      <h2>Interactive Elements</h2>
 
       <section class="element">
         <h3>In-text link</h3>
@@ -67,13 +81,15 @@
         <h3>Navigation Link</h3>
 
         <h4>CSS selector:</h4>
-        <p>.button-nav</p>
+        <p>.checkout-btn</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="checkout-btn"&gt;CHECKOUT&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
+        <a href="#" class="checkout-btn">
+          CHECKOUT
+        </a>
 
       </section>
 
@@ -82,16 +98,16 @@
         <h3>Submit/Reset Buttons</h3>
 
         <h4>CSS selector:</h4>
-        <p>.button-submit, .button-reset</p>
+        <p>.submit-btn, .reset-btn</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button-submit"&gt;Submit Button&lt;/a&gt;</code>
-        <code>&lt;a href="#" class="button-reset"&gt;Reset Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="submit-btn"&gt;Submit Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="reset-btn"&gt;Reset Button&lt;/a&gt;</code>
 
 
         <h4>Rendered element:</h4>
-        <a class="button-submit" href="#">Submit Button</a>
-        <a class="button-reset" href="#">Reset Button</a>
+        <a href="#" class="checkout-btn">SUBMIT</a>
+        <a href="#" class="reset-btn">RESET</a>
 
       </section>
 
@@ -99,19 +115,33 @@
       <section class="element">
         <h3>Text Input Field with Label</h3>
 
-        <h4>CSS selector:</h4>
-        <p>input[type="text"], label</p>
+        <h4>CSS SELECTOR:</h4>
+        <p>contact-form, label, input</p>
 
         <h4>Sample code:</h4>
         <code>
-          &lt;label for="name"&gt;Name:&lt;/label&gt;
-          &lt;input type="text" id="name" name="name"&gt;
+          &lt;label for="name"&gt;FULL NAME&lt;/label&gt;
+          &lt;input id="name" type="text"&gt;
         </code>
 
         <h4>Rendered element:</h4>
-        <div class="form-field">
-          <label for="name">Name:</label>
-          <input class="text-input" type="text" id="name" name="name">
+        <div class="contact-form">
+          <label for="name">FULL NAME</label>
+          <input id="name" type="text" />
+
+          <label for="name">PHONE NUMBER</label>
+          <input id="name" type="text" />
+    
+          <label for="email">EMAIL</label>
+          <input id="email" type="email" />
+    
+          <label for="subject">SUBJECT</label>
+          <input id="subject" type="text" />
+    
+          <label for="message">MESSAGE</label>
+          <textarea id="message" rows="6"></textarea>
+    
+          <a href="#" class="submit-btn">SUBMIT</a>
         </div>
       </section>
 
@@ -136,19 +166,46 @@
       </section>
 
 
-
+      <!-- image as a link -->
       <section class="element">
         <h3>Image as a Link</h3>
         <h4>CSS selector:</h4>
-        <p>a img</p>
+        <p>.products-grid, .product-card, .product-overlay, .view-btn, .product-info</p>
         <h4>Sample code:</h4>
-        <code>&lt;a href="#"&gt;&lt;img src="ChocoMonsterFudge.png" alt="0pg"&gt;&lt;/a&gt;</code>
+        <code>
+          &lt;div class="products-grid"&gt;
+            &lt;div class="product-card"&gt;
+              &lt;img src="img/SweetStrawberryCheese.png" alt="Sweet Strawberry Cheese"&gt;
+          
+              &lt;div class="product-overlay"&gt;
+          
+                &lt;a href="strawberry-product-listing.html" class="view-btn"&gt;VIEW DETAIL&lt;/a&gt;
+          
+                &lt;div class="product-info"&gt;
+                  &lt;h3&gt;Sweet Strawberry Cheese&lt;/h3&gt;
+                  &lt;p&gt;$42.99&lt;/p&gt;
+                &lt;/div&gt;
+          
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;</code>
         <h4>Rendered element:</h4>
-        <a class = "imageLink" href="#"><img src="img/ChocoMonsterFudge.png" alt="A fudge cake with decorations"></a>
+        <div class="products-grid">
+        <div class="product-card">
+          <img src="img/SweetStrawberryCheese.png" alt="Sweet Strawberry Cheese">
+        
+          <div class="product-overlay">
 
+            <a href="strawberry-product-listing.html" class="view-btn">VIEW DETAIL</a>
+        
+            <div class="product-info">
+              <h3>Sweet Strawberry Cheese</h3>
+              <p>$42.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
-
-
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
@@ -172,7 +229,7 @@
         &lt;p&gt;Paragraph&lt;/p&gt;
       </code>
       <h4>Rendered element:</h4>
-      <h2>Heading Level 1</h2>
+      <h1>Heading Level 1</h1>
       <h2>Heading Level 2</h2>
       <h3>Heading Level 3</h3>
       <h4>Heading Level 4</h4>
@@ -222,3 +279,24 @@
       </section>
 
     </section>
+      </div>
+  </section>
+
+    <!-- footer for style guide and citations -->
+    <footer class="site-footer">
+      <div class="footer-container">
+    
+        <div class="footer-left">
+          <p>© 2026 LE CAKERY</p>
+        </div>
+    
+        <div class="footer-right">
+          <a href="citations.html">CITATIONS</a>
+          <a href="styleguide.html">STYLE GUIDE</a>
+          <a href="https://github.com/jihyebook-star/IAT339-P02">GITHUB</a>
+        </div>
+    
+      </div>
+    </footer>
+
+    </body>

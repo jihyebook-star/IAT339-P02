@@ -62,7 +62,7 @@
 .quantity{
     display: flex;
     flex: 0 0 auto;
-    border: 1px solid #FFE4B9;
+    /* border: 1px solid #FFE4B9; */
 }
   
 .quantity button{
@@ -125,10 +125,11 @@
     border-radius: 999px;
     transition: opacity 0.2s ease;
 }
+
   
-.checkout-btn:hover{
-    opacity: 0.85;
-}
+  .checkout-btn:hover{
+    opacity: 0.7;
+  }
 
 /* continue shopping button */
 .continue-btn{
@@ -144,7 +145,7 @@
 }
 
 .continue-btn:hover{
-    opacity: 0.8;
+    background-color: rgba(255, 228, 185, 0.5);
 }
 
 .checkout-wrap{

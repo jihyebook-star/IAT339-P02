@@ -1,6 +1,5 @@
 body {
   font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
-  background-color: #464F53;
   color: #ffffff;
 }
 
@@ -10,46 +9,49 @@ body {
   padding: 0 8%;
 }
 
+.page-container h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.56rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color:white;
+}
+
+
 .header-title {
   margin-left: 1rem;
 }
 
-#interactive_elements h1 {
-  position: relative;
-  padding-bottom: 1.5rem;
-}
-
-#interactive_elements h1::after {
-  content: "";
-  display: block;
-  width: 100%;
-  max-width: 50rem;
-  height: 0.07rem;
-  background-color: #FFE4B9;
-  margin-top: 1rem;
-}
 
 .header-paragraph {
   margin-left: 1rem;
 }
 
-/* .element {
-  margin-left: 16rem;
-  margin-right: 16rem;
-  padding: 2rem;
-  border: 0.15rem solid #a77c78;
-  background-color: #f1cece33;
-  border-radius: 0.8rem;
-} */
 
 .element {
   margin: 2rem 0;
   padding: 2rem;
-  border: 0.15rem solid #a77c78;
+  border: 0.15rem solid #FFE4B9;
   background-color: #f1cece33;
   border-radius: 0.8rem;
 }
 
+.element h3 {
+    font-family: 'Sansita', serif;
+    color: #FFE4B9;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+.element h4{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 1.5rem; 
+    color: white;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
 section {
   margin-bottom: 1.5rem;
   margin-left: 0.2rem;
@@ -73,17 +75,8 @@ h2 {
   margin-top: 2rem;
 }
 
-h3 {
-  font-family: 'Questrial', sans-serif;
-  font-size: 1.43rem;
-  font-weight: 400;
-}
 
-h4 {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
+
 
 ol, li {
   font-family: 'Noto Sans', sans-serif;
@@ -92,7 +85,9 @@ ol, li {
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
   max-width: 50rem;
   width: 100%;
 }
@@ -173,6 +168,24 @@ nav a:hover, nav a:focus {
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
+
+.reset-btn{
+    font-family: 'questrial', serif;
+    display: block;
+    text-align: center;
+    margin: 1rem auto 0;
+    width: 12rem;
+    padding: 0.8rem;
+    border: 1px solid #FFE4B9;
+    color: #FFE4B9;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.reset-btn:hover{
+    background-color: rgba(255, 228, 185, 0.5);
+}
 
 /* 
   TEXT ELEMENTS -------------------
@@ -417,32 +430,6 @@ nav a:hover, nav a:focus {
   box-shadow: 0 0 3px rgba(0, 119, 255, 0.5);
 }
 
-.additional-description {
-  margin-left: 1rem;
-}
-
-.potential-imagery {
-  margin-left: 1rem;
-}
-
-.fixed-image {
-  width: 28rem;
-  height: 10rem;
-  object-fit: cover;
-  display: block;
-  margin-left: 1rem;
-}
-
-.fixed-image.font {
-  width: 18rem;
-  height: 7rem;
-}
-
-.fixed-image.tall {
-  width: 33rem;
-  height: 27rem;
-}
-
 
 @media (max-width: 60rem) {
     .top-bar {
@@ -474,9 +461,6 @@ nav a:hover, nav a:focus {
       border-radius: 0.8rem;
     }
 
-    h1 {
-        font-size: 1.7rem;
-    }
 
     h2 {
       font-size: 1.4rem;
@@ -620,9 +604,6 @@ nav a:hover, nav a:focus {
       border-radius: 0.8rem;
     }
 
-    h1 {
-        font-size: 1.5rem;
-    }
 
     h2 {
       font-size: 1.2rem;

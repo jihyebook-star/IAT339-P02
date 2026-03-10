@@ -11,6 +11,7 @@ body {
   color: #ffffff;
 }
 
+
 /* footer */
 .site-footer{
   background: #5D3636;    
@@ -38,21 +39,41 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+/* create same footer animation as the nav bar */
 .footer-right{
   display: flex;
   gap: 2rem;
 }
 
 .footer-right a{
+  position: relative;
   font-family: 'Noto Sans', sans-serif;
   text-decoration: none;
   font-size: 0.85rem;
   color: #F5D7B2;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.3s ease;
 }
 
-.footer-right a:hover{
-  opacity: 0.6;
+.footer-right a:hover,
+.footer-right a:focus{
+  opacity: 0.7;
+}
+
+/* animated underline */
+.footer-right a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 2px;
+  background-color: #F5D7B2;
+  transition: width 0.3s ease;
+}
+
+.footer-right a:hover::after,
+.footer-right a:focus::after{
+  width: 100%;
 }
 
 .main-body{
@@ -586,7 +607,6 @@ nav a:hover, nav a:focus {
       height: 1.3rem;
     }
 }
-
 
 
 
