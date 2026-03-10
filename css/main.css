@@ -526,15 +526,17 @@ nav a:hover, nav a:focus {
   margin: 0 0 1rem;
 }
 
-.citations-line{
+.citations-line {
   height: 1px;
   background: #FFE4B9;
   width: 100%;
+  max-width: 60rem;
   margin-bottom: 3rem;
 }
 
 .citations-container{
-  max-width: 72rem;
+  max-width: 60rem;
+  width: 100%;
   margin: 0 auto;
   padding: 0 8%;
 }
@@ -542,7 +544,6 @@ nav a:hover, nav a:focus {
 .citations-box{
   border: 1px solid #FFE4B9;
   padding: 2.5rem;
-  max-width: 42rem;
 }
 
 .citations-box p{
