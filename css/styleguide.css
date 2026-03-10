@@ -17,16 +17,13 @@ body {
     color:white;
 }
 
-
 .header-title {
   margin-left: 1rem;
 }
 
-
 .header-paragraph {
   margin-left: 1rem;
 }
-
 
 .element {
   margin: 2rem 0;
@@ -74,9 +71,6 @@ h2 {
   font-weight: 600;
   margin-top: 2rem;
 }
-
-
-
 
 ol, li {
   font-family: 'Noto Sans', sans-serif;
@@ -187,16 +181,6 @@ nav a:hover, nav a:focus {
     background-color: rgba(255, 228, 185, 0.5);
 }
 
-/* 
-  TEXT ELEMENTS -------------------
-*/
-
-
-
-
-/* 
-  COMBINED ELEMENTS -------------------
-*/
 
 .home-logo-img img,
 .cart-logo-img img {

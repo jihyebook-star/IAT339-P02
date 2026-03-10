@@ -11,8 +11,6 @@ body {
   color: #ffffff;
 }
 
-
-/* footer */
 .site-footer{
   background: #5D3636;    
   padding: 2rem 0;
@@ -39,7 +37,6 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* create same footer animation as the nav bar */
 .footer-right{
   display: flex;
   gap: 2rem;
@@ -59,7 +56,6 @@ body {
   opacity: 0.7;
 }
 
-/* animated underline */
 .footer-right a::after{
   content: "";
   position: absolute;
@@ -209,7 +205,6 @@ li {
   overflow: hidden;
 }
 
-/* make the image a background layer */
 .page-header-img{
   position: absolute;
   top: 0;
@@ -221,7 +216,6 @@ li {
   z-index: 0;
 }
 
-/* make text sit above the image */
 .header-text{
   position: absolute;
   top: 50%;
@@ -231,7 +225,6 @@ li {
   z-index: 2;
 }
 
-/* make the button sit above everything */
 .button-shopnow{
   position: absolute;
   left: 50%;
@@ -271,7 +264,6 @@ li {
   opacity: 0.9;
 }
 
-/* CHEFS */
 .chefs-wrap{
   background: #464F53;
   padding: 2rem 0 5rem;
@@ -321,7 +313,6 @@ li {
   opacity: 0.9;
 }
 
-/* INGREDIENTS */
 .ingredients-wrap{
   background: #464F53;
   padding: 4rem 0 6rem;
@@ -337,7 +328,6 @@ li {
   align-items: center;
 }
 
-/* collage layout */
 .ingredients-collage{
   position: relative;
   min-height: 22rem;
@@ -351,7 +341,6 @@ li {
   display: block;
 }
 
-/* tweak these to match your screenshot */
 .collage-img.big{
   width: 18rem;
   height: 11rem;
@@ -373,7 +362,6 @@ li {
   top: 15rem;
 }
 
-/* right white box */
 .ingredients-box{
   background: #f7f0ee;
   padding: 3rem 2.5rem;
@@ -394,21 +382,6 @@ li {
   font-family: 'Noto Sans', sans-serif;
   line-height: 1.6;
   font-size: 0.95rem;
-}
-
-/* responsive */
-@media (max-width: 900px){
-  .chef-grid{
-    grid-template-columns: 1fr;
-  }
-
-  .ingredients-container{
-    grid-template-columns: 1fr;
-  }
-
-  .ingredients-collage{
-    min-height: 26rem;
-  }
 }
 
 .additional-description {
@@ -508,7 +481,6 @@ nav a:hover, nav a:focus {
   margin-left: 1rem;
 }
 
-/* citations */
 .citations-wrap{
   padding: 4.5rem 0 5rem;
 }
@@ -587,6 +559,18 @@ nav a:hover, nav a:focus {
         font-size: 0.8rem;
         margin-left: 0.7rem;
     }
+
+  .chef-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .ingredients-container{
+    grid-template-columns: 1fr;
+  }
+
+  .ingredients-collage{
+    min-height: 26rem;
+  }
 
     .citations-box{
       max-width: 100%;

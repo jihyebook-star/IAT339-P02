@@ -52,7 +52,7 @@
 .products-line{
     height: 1px;
     background: #FFE4B9;
-    width: 40rem;        
+    width: 57rem;        
     max-width: 100%;
     opacity: 0.95;
 }
@@ -148,7 +148,7 @@
     transform: scale(1.05);
 }
 
-@media (max-width: 900px){
+@media (max-width: 56.25rem){
   .products-header{
       grid-template-columns: 1fr;
       row-gap: 1rem;
@@ -160,7 +160,7 @@
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 37.5rem){
   .products-grid{
       grid-template-columns: 1fr;
   }

@@ -62,7 +62,6 @@
 .quantity{
     display: flex;
     flex: 0 0 auto;
-    /* border: 1px solid #FFE4B9; */
 }
   
 .quantity button{
@@ -127,11 +126,10 @@
 }
 
   
-  .checkout-btn:hover{
+.checkout-btn:hover{
     opacity: 0.7;
   }
 
-/* continue shopping button */
 .continue-btn{
     font-family: 'questrial', serif;
     display: inline-block;
@@ -330,24 +328,6 @@ input, select{
     margin-top:1.5rem;
     font-weight:bold;
 }
-  
-@media (max-width:900px){
-    .checkout-grid{
-      grid-template-columns:1fr;
-    }
-}
-
-@media (max-width: 900px){
-
-    .cart-grid{
-        grid-template-columns: 1fr;
-    }
-
-    .cart-summary{
-        margin-top: 2rem;
-    }
-  
-}
 
 .confirm-wrap{
     position: relative;
@@ -418,9 +398,19 @@ input, select{
 .back-home-btn:hover{
     opacity: 0.85;
 }
-  
-/* TABLET */
-@media (max-width: 900px){
+
+@media (max-width: 56.25rem){
+    .checkout-grid{
+      grid-template-columns:1fr;
+    }
+
+    .cart-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .cart-summary{
+        margin-top: 2rem;
+    }
 
     .confirm-card{
       width: 100%;
@@ -437,8 +427,7 @@ input, select{
     }
   }
   
-  /* MOBILE */
-  @media (max-width: 600px){
+  @media (max-width: 37.5rem){
   
     .confirm-wrap{
       padding: 2rem 6%;

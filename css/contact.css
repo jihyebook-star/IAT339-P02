@@ -37,7 +37,6 @@
   align-items: start;
 }
 
-/* LEFT CONTACT MESSAGE FORM */
 /* TUTORIAL FROM https://www.w3schools.com/css/css_grid.asp */
 .contact-form{
   display: grid;
@@ -103,7 +102,6 @@
   background-color: rgba(255, 228, 185, 0.12);
 }
 
-/* RIGHT INFO BOX */
 .info-box{
   border: 1px solid;
   border-color: #F5D7B2;
